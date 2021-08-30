@@ -7,7 +7,7 @@
 
 ### Index some test data
 * Install curl: http://www.confusedbycode.com/curl/#downloads
-* Download accounts json from: https://raw.githubusercontent.com/elastic/elasticsearch/master/docs/src/test/resources/accounts.json
+* Download and unzip accounts json from: https://download.elastic.co/demos/kibana/gettingstarted/accounts.zip
 * Download employee json from: https://ikeptwalking.com/wp-content/uploads/2017/04/Employees50K.zip
 * Index employee data: *<addr>curl -H 'Content-Type: application/json' -X POST "http://localhost:9200/_bulk?pretty" --data-binary @c:\Employees50K.json</addr>*
 * Index accounts data: *<addr>curl -H 'Content-Type: application/json' -X POST "localhost:9200/bank/account/_bulk?pretty" --data-binary @c:\Accounts.json</addr>*
